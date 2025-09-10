@@ -1,3 +1,3 @@
-def call() {
-  bat "echo hellow world"
+def call(Map config =[:]) {
+  bat "echo hello ${config.name}. Today is ${config.dayOfWeek}"
 }
